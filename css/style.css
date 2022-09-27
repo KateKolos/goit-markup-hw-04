@@ -339,7 +339,7 @@ header.top-page-border {
 
 .team-descr {
   padding-top: 30px;
-  /* padding-bottom: 30px; */
+  padding-bottom: 30px;
   text-align: center;
 }
 
@@ -354,7 +354,8 @@ header.top-page-border {
 .team-list-descr {
   color: var(--secondary-text-color);
   font-size: 16px;
-  line-height: 1.189;
+  line-height: 1.19;
+  margin-bottom: 16px;
 }
 
 .team-soc-list {
@@ -362,7 +363,6 @@ header.top-page-border {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  margin-top: 16px;
 }
 
 .team-soc-item {

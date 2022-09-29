@@ -494,6 +494,7 @@ span.footer-logo-accent {
 .footer-container {
   display: flex;
   align-items: center;
+  align-items: baseline;
 }
 
 .footer-soc-title {

@@ -8,6 +8,7 @@
   --logo-main-color: #000000;
   --footer-background-color: #2f303a;
   --footer-link-color: rgba(255, 255, 255, 0.6);
+  --soc-clients-color: #afb1b8;
 }
 
 p,
@@ -254,8 +255,7 @@ header.top-page {
 }
 
 .features-item {
-  /* border: 1px solid red; */
-  width: 270px;
+  flex-basis: calc((100% - 3 * 30px) / 4);
 }
 
 .features-item-img {
@@ -298,7 +298,7 @@ header.top-page {
   gap: 30px;
 }
 .work-photo {
-  width: calc((100% - 60px) / 3);
+  flex-basis: calc((100% - 60px) / 3);
 }
 
 .work-title,
@@ -327,7 +327,7 @@ header.top-page {
 
 .team-item {
   background-color: var(--container-bg-color);
-  width: calc((100% - (3 * 30)) / 4);
+  flex-basis: calc((100% - (3 * 30px)) / 4);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -362,7 +362,7 @@ header.top-page {
 }
 
 .team-soc-link {
-  color: #afb1b8;
+  color: var(--soc-clients-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -383,11 +383,6 @@ header.top-page {
 
 /* ------------Клієнти------------ */
 
-.clients {
-  width: 1200px;
-  margin: 0 auto;
-}
-
 .clients-title {
   text-align: center;
   margin-bottom: 50px;
@@ -398,15 +393,18 @@ header.top-page {
   gap: 30px;
 }
 
+.clients-list-item {
+  flex-basis: calc((100% - 5 * 30px) / 6);
+}
+
 .clients-list-link {
   display: flex;
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
+  color: var(--soc-clients-color);
+  border: 1px solid var(--soc-clients-color);
   border-radius: 4px;
   padding: 16px 32px;
-  color: #afb1b8;
-  width: calc((100% - 5 * 30) / 6);
 }
 
 .clients-icon {
@@ -416,7 +414,7 @@ header.top-page {
 .clients-list-link:hover,
 .clients-list-link:focus {
   color: var(--accent-color);
-  border-color: 1px solid var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 /* ---------------Footer------------ */
@@ -459,11 +457,6 @@ span.footer-logo-accent {
 .footer-nav-link:hover,
 .footer-nav-link:focus {
   color: var(--accent-color);
-}
-
-.footer-nav-address .item:last-child {
-  margin-bottom: 0;
-  padding-bottom: 0px;
 }
 
 .footer-nav-link-address {
@@ -573,11 +566,13 @@ span.footer-logo-accent {
   gap: 30px;
 }
 
+.grid-item {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
 .grid-link {
   display: block;
   background-color: var(--container-bg-color);
-  flex-basis: calc((100% - 60px) / 3);
-  margin-bottom: 30px;
 }
 
 .grid-link:hover,
